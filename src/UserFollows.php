@@ -101,9 +101,9 @@ class UserFollows extends AbstractController
         }
 
         if(preg_match('/\?/', $endpoint)) {
-            $endpoint .= '&user.fields=description';
+            $endpoint .= '&user.fields=profile_image_url';
         } else {
-            $endpoint .= '?user.fields=description';
+            $endpoint .= '?user.fields=profile_image_url';
         }
 
         return $endpoint;
